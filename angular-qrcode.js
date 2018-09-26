@@ -10,6 +10,8 @@ if (typeof module !== 'undefined' &&
   module.exports = 'monospaced.qrcode';
 }
 
+var qrcode = require('qrcode-generator');
+
 angular.module('monospaced.qrcode', [])
   .directive('qrcode', ['$window', function($window) {
 
